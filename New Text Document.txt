@@ -1,0 +1,278 @@
+<%-- 
+    Document   : First11
+    Created on : Jul 24, 2017, 9:13:45 AM
+    Author     : User
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+form{
+float:venter;
+}
+form li{
+list-style:none;
+margin-bottom:50px;
+
+}
+form ul li label{
+float:left;
+clear:left;
+width:100px;
+text-align:right;
+margin-right:10px;
+font-family:verdana,areial,helvetica;
+font-size:14px;
+}
+form ul li input,select,span{
+float:left;
+margin-bottom:10px;
+
+}
+form textarea{
+float:left;
+width:350px;
+height:150px;
+}
+[type="submit"]{
+clear:left;
+margin:20px 0 0 230px;
+font-size:18px;
+}
+</style>
+
+
+
+<script>
+   /* function userid_validation(uname,mx,my)
+{
+var uname_len=uname.value.length;
+if(uname_len==0 || uname_len>=my || uname_len<mx){
+alert("User name should not be empty / length be between"+mx+" to "+my);
+uname.focus();
+return false;
+}
+else
+return true;
+}
+	function passis_validation(upass,mx,my)
+	{
+	var pass_len=upass.value.length;
+	if(pass_len==0 || pass_len>=my || pass_len<mx){
+	alert("User name should not be empty / length be between"+mx+" to "+my);
+	upass.focus();
+	return false;
+	}else
+	return true;
+	}
+
+function allLetter(uname)
+{
+var letters=/^[A-Za-z]+$/;
+if(uname.lalue.match(letters))
+{	return true;	}
+else
+{
+alert("Name must have alphabet characters only ");
+uname.focus();
+return false;
+}
+} 
+
+
+	function branchselect(ubranch)
+	{
+	if(ubranch=="Default")
+	{
+	alert("select Branch from the list");
+	ubranch.focus();
+	return false;
+	}
+	else
+	return true;
+	}
+function yearselect(uyear)
+{
+if(uyear==="Default")
+{
+alert("select Year from the list");
+uyear.focus();
+return false;
+}
+else
+return true;
+}
+	function validateemail(uemail)
+	{
+
+	var mailformat=/^\W+([\.-]?\W+)*@\W+([\.-]?\W+)*(\.\W{2,3})+$/;
+	if( uemail.value.match(mailformat))
+	{
+	return true;
+	}
+	else
+	{
+	alert("You have entered an invalid email address!");
+	uemail.focus();
+	return false;
+	}
+	}
+
+function validsex(umsex,ufsex)
+{
+var x=0;
+if(umsex.checked)
+{
+x++;
+}
+if(ufsex.checked)
+{
+x++;
+}
+if(x==0)
+{
+alert("Select Male/Female");
+umsex.focus();
+return false;}
+
+else
+{
+return true;
+}
+}
+
+	function validcheck(uselect)
+	{
+	var x=0;
+	if(uselect.checked)
+	{x++;}
+	if(x==0)
+	{
+	alert("Select terms and condition!");
+	uselect.focus();
+	return false;}
+	else
+	{
+	return true;
+	}
+	}
+*/
+	function formValidation()
+	{/*
+	var uname=document.getElementById("n1").value;
+	var ulname=document.getElementById("f1").value;
+	var ubranch=document.getElementById("branch").value;
+	var uyear=document.getElementById("year").value;
+	var uemail=document.getElementById("e1").value;
+	var upass=document.getElementById("p1").value;
+	var ucpass=document.getElementById("a1").value;
+	var umobile=document.getElementById("m1").value;
+	var umsex=document.getElementById("mg").value;
+	var ufsex=document.getElementById("fg").value;
+	var uselect=document.;
+	*/
+	document.alert("User name should not be empty / length be between"+mx+" to "+my);
+
+		if(uname.value.length<2)
+		{
+                    var mx=15;
+                    var my=3;
+                   var uname_len=uname.value.length;
+                if(uname_len==0 || uname_len>=my || uname_len<mx){
+                alert("User name should not be empty / length be between"+mx+" to "+my);
+                 uname.focus();
+                return false;
+                        }
+                else
+                return true; 
+                }
+		/*if(passis_validation(upass,8,15))
+		{
+		if(allLetter(uname))
+		{
+		if(branchselect(ubranch))
+		{
+		if(yearselect(uyear))
+		{
+		if(validateemail(uemail))
+		{
+		if(validsex(umsex,ufsex))
+		{
+		if(validcheck(uselect)){}
+		}
+		}
+		}
+		}
+		}
+		}
+		}*/
+		return false;
+            }
+
+
+
+</script>
+    </head>
+    <body>
+        <div align="center"><h1>Registration page</h1></div>
+        <div>
+	 <form   action="TestRegistrationTask"   align="left" >
+                    <ul>
+                        <li><label for="name">Name</label></li>
+                             <li><input type="text" id="n1" name="name"></li>
+                             
+                         <li><label for="eno">Mobil NO:</label></li>
+                             <li><input type="text" id="mno" name="mno"></li>
+
+                         <li><label id="college">Ward Number</label></li>
+	<li><select name="ward">
+	<option selected="" value="Default">(Choose your ward)</option>
+	<option value="w1">Ward-1 </option>
+        <option value="w2">Ward-2 </option>
+        <option value="w3">Ward-3 </option>
+	</select></li>
+                             
+                             
+     
+        
+        
+               <li><label id="gender">Gender</label></li>
+               <li><input type="radio" id="mg" value="mgender" name="gender"><span>Male</span></li>
+               <li> <input type="radio"  id="fg" value="fgender"name="gender"><span>Female</span></li>
+               <li> <input type="radio"  id="fg" value="ogender"name="gender"><span>Other</span></li>
+            
+	
+	
+	
+	                   
+                        <li><label for="email">Address</label></li>
+                        
+                            <li><input type="text" id="add" name="add"></li>
+                        
+                   
+                        <li><label for="password">Password</label></li>
+                        
+                            <li><input type="password" id="pass" name="pass"></li>
+                        
+               
+                                   
+                             
+                     <li><input type="submit" id="s1" value="Register" ></li>
+                 
+               </ul>
+            </form>
+            
+        </div>
+    </body>
+</html>
